@@ -1,5 +1,13 @@
 {
   "files": [],
+  // !!! add jsx: react-jsx to fix error, if not, it dose not import component
+  "compilerOptions": { 
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
